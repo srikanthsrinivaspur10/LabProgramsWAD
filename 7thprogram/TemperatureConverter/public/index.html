@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Temp Converter</title>
+</head>
+<body>
+    <h2>Fahrenheit to Celsius</h2>
+
+    <form id="form">
+        <input type="number" id="fahrenheit" placeholder="Enter °F" required>
+        <button type="submit">Convert</button>
+    </form>
+
+    <h3 id="result"></h3>
+
+    <script>
+        document.getElementById("form").addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            const f = document.getElementById("fahrenheit").value;
+
+            fetch("/convert", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ fahrenheit: f })
+            })
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById("result").innerText =
+                    `${data.fahrenheit}°F = ${data.celsius}°C`;
+            });
+        });
+    </script>
+</body>
+</html>
