@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Photo Slideshow</title>
+
+<style>
+body {
+    font-family: Arial;
+    text-align: center;
+}
+
+#slideshow {
+    width: 900px;
+    height: 350px;
+    margin: auto;
+}
+
+#slideshow img {
+    width: 900px;
+    height: 350px;
+    border: 3px solid black;
+}
+</style>
+
+</head>
+<body>
+
+<h1><i><u>Photo Slideshow using JavaScript</u></i></h1>
+
+<div id="slideshow">
+    <img id="slide" src="">
+</div>
+
+<footer>
+    <marquee><a href="#">All About Photo SlideShow</a></marquee>
+</footer>
+
+<script>
+// 🌐 Online image URLs (no local storage)
+var images = [
+    "https://picsum.photos/id/1015/900/350",
+    "https://picsum.photos/id/1025/900/350",
+    "https://picsum.photos/id/1035/900/350",
+    "https://picsum.photos/id/1045/900/350"
+];
+
+var index = 0;
+var slide = document.getElementById("slide");
+
+function showSlide() {
+    slide.src = images[index];
+    index++;
+    if (index >= images.length) {
+        index = 0;
+    }
+}
+
+// Load first image
+showSlide();
+
+// Change image every 2 seconds
+setInterval(showSlide, 2000);
+</script>
+
+</body>
+</html>
