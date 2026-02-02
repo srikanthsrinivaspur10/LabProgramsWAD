@@ -1,0 +1,38 @@
+books {
+    color: orange;
+}
+
+book {
+    display: block;
+    margin-bottom: 10px;
+}
+
+title {
+    color: blue;
+    font-weight: bold;
+}
+
+author {
+    color: red;
+    font-weight: bold;
+}
+
+isbn {
+    color: green;
+    font-weight: bold;
+}
+
+publisher {
+    color: purple;
+    font-weight: bold;
+}
+
+edition {
+    color: brown;
+    font-weight: bold;
+}
+
+price {
+    color: darkblue;
+    font-weight: bold;
+}

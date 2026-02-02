@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="books.xsl"?>
+<!DOCTYPE books SYSTEM "books.dtd">
+
+<books>
+
+    <book>
+        <title>Java Server Page</title>
+        <author>Hans Bergsten</author>
+        <isbn>81-265</isbn>
+        <publisher>O'Reilly</publisher>
+        <edition>Second</edition>
+        <price>200</price>
+    </book>
+
+    <book>
+        <title>C Programming</title>
+        <author>Balaguruswamy</author>
+        <isbn>81-695</isbn>
+        <publisher>Tata</publisher>
+        <edition>Second</edition>
+        <price>400</price>
+    </book>
+
+    <book>
+        <title>Web Program</title>
+        <author>Chris Bates</author>
+        <isbn>81-265</isbn>
+        <publisher>Wiley</publisher>
+        <edition>Second</edition>
+        <price>300</price>
+    </book>
+
+</books>
